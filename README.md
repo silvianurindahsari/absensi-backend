@@ -5,10 +5,13 @@
 2. Jalankan `npm install` di terminal.
 
 ### Cara Run:
-1. Pastikan PostgreSQL aktif dan tabel sudah dibuat.
-2. Jalankan `node app.js`.
+1. Pastikan PostgreSQL aktif dan sudah membuat database.
+2. Jalankan server dengan perintah: `node app.js`.
 
--- Jalankan ini di Query Tool PostgreSQL Anda:
+### Struktur Database:
+Jalankan perintah SQL berikut di Query Tool PostgreSQL Anda untuk membuat tabel:
+
+```sql
 CREATE TABLE absensi (
   id SERIAL PRIMARY KEY,
   nama VARCHAR(255),
